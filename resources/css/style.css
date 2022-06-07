@@ -1,0 +1,77 @@
+:root {
+    --background: #FFF;
+    --text: #111;
+    --orange-yellow-crayola: #FFD07B;
+    --light-coral: #f87575ff;
+    --cornflower-blue: #5c95ffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    font-family: 'Spartan', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table thead {
+    background-color: var(--cornflower-blue);
+    line-height: 4vh;
+    font-weight: 600;
+    color: var(--background);
+}
+
+table th,
+table td {
+    text-align: center;
+}
+
+table tbody img {
+    height: 3vh;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: var(--orange-yellow-crayola);
+}
+
+tbody tr td {
+    line-height: 4vh;
+    border-bottom: thin solid var(--deep-taupe);
+}
+
+tbody tr td:nth-child(1) { /* Styling für erste Spalte der Tabelle ("Platz") */
+    font-weight: 600;
+}
+
+tbody tr td:nth-child(3) { /* Styling für dritte Spalte der Tabelle ("Verein") */
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr td:nth-child(8) { /* Styling für achte Spalte der Tabelle ("Punkte") */
+    font-weight: 600;
+}
+
+tbody tr:nth-child(4) td, /* Styling für letztes Team in CL-, EL-, ECL-Qualifikation */
+tbody tr:nth-child(6) td,
+tbody tr:nth-child(7) td {
+    border-bottom: 2px solid var(--cornflower-blue);
+}
+
+tbody tr:nth-child(15) td, /* Styling für Relegations- und Abstiegsplätze */
+tbody tr:nth-child(16) td {
+    border-bottom: 2px solid var(--light-coral);
+}
